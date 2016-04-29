@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="entry.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+</head>
+<body onload="init()">
+	<form id="topBar" style="position: absolute; right: 0px">
+		<img src="help.png">
+		<img src="notifications.png">
+		<img src="apps.png">
+		<img src="group-2@3x.png" style="height: 50px; width: 50px; vertical-align:center;">
+	</form>
+	<img id="logo" src="logo.png" style="margin: 0px auto 80px auto; display: block;">
+	<img id="userImg" src="group-2@3x.png" style="margin: auto; width: 100px; height: 100px;">
+	<a id="userName" class="userInfo" style="font-weight: 600;"></a><br>
+	<a id="userEmail" class="userInfo"></a><br>
+	<script src="entry.js">printinfo()</script>
+	<br>
+	<form style="margin:auto;">
+		<a class="Field" id="userform">
+			<span><img src="user.png" style="position: relative; top: 17px; left: 17px;"></span>
+			<span class="Field_in"><input type="text" id="user" autocomplete="off" autofocus placeholder="EMAIL"></span>
+		</a>
+		<br>
+
+		<a class="Field" id="passform" >
+			<span><img src="group.png" style="position: relative; top: 17px; left: 17px;"></span>
+			<span class="Field_in"><input type="password" id="pass" autocomplete="off" placeholder="PASSWORD"></span>
+		</a>
+		<br>
+
+		<a id="next" class="sub" onclick="enter()">
+			<span class="sub_text">next</span>
+		</a>
+	</form>
+	<a id="login" class="sub" onclick="enterTwo()">
+		<span class="sub_text">login</span>
+	</a>
+
+	<h2 id="new" style="text-align: center; font-size: 12px; color: blue; cursor: pointer;" onclick="newUser()">New User?</h2>
+	<h3 id="notUser" style="text-align: center; font-size: 12px; color: blue; cursor: pointer;" onclick="notUser()">Not You?</h3>
+	
+	<table id="APPS" class="Apps">
+		<tr>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+		</tr>
+		<tr>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+		</tr>
+		<tr>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+			<td><img class="Apps_choice" src="page-1.png"></td>
+		</tr>
+	</table>
+</body>
+</html>

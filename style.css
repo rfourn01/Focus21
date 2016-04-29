@@ -1,0 +1,81 @@
+input{
+	display: block;
+	margin: auto;
+	border-width: 0px;
+	font-size: 15px;
+	width: 225px;
+}
+.userInfo{
+	color: black;
+	margin: auto;
+	display: block;
+	text-align: center;
+}
+.Field{
+	margin: auto;
+	width: 300px;
+	height: 55px;
+	display: block;
+	border-radius: 100px;
+	border: solid 1px #00479f;
+}
+.Field_in{
+	border-width: 0px;
+	position: relative;
+	bottom: 7px;
+	left: 7px;
+}
+.picture{
+	margin: auto;
+	display: block:
+}
+.sub{
+	margin: auto;
+	background-color: #00479f;
+	border-radius: 100px;
+	display: block;
+	height: 55px;
+	width: 300px;
+	cursor: pointer;
+}
+.sub_text{
+	display: block;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	position: relative;
+	top: 17px;
+}
+.Apps{
+	float:left;
+	position: absolute;
+	left: 40%;
+	right: 40%;
+}
+.Apps_choice{
+	margin: 36px;
+    width: auto;
+}
+.runAnim{
+	animation-name: shake;
+	animation-duration: 1s;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
