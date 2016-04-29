@@ -93,7 +93,7 @@ function enter(){
 			showTwo();
 		} else {
 			window.alert("WRONG PASSWORD");
-			animation("login");
+			animation("next");
 		}
 	} else {
 		window.alert("USER NOT FOUND");
@@ -111,6 +111,7 @@ function enterTwo(){
 		localStorage.setItem("status", curStatus.tostring());
 	} else {
 		window.alert("WRONG PASSWORD");
+		animation("login");
 	}
 }
 function newUser(){
@@ -142,12 +143,9 @@ function printInfo(){
 	document.getElementById("userName").innerHTML = curUser.getUN();
 	document.getElementById("userEmail").innerHTML = curUser.getEM();
 }
-function animation(e) {
-  var element = document.getElementById(id);
-  
-  element.classList.remove("runAnim");
-  
-  element.offsetWidth = element.offsetWidth;
-  
-  element.classList.add("runAnim");
+function animation(id) {
+	var element = document.getElementById(id);
+	element.classList.remove("runAnim");
+	element.offsetWidth = element.offsetWidth;
+	element.classList.add("runAnim");
 }
